@@ -8,13 +8,20 @@ body {
 
 .sidebar {
     width: 200px;
-    background-color: #00ffff;
+    background-color: #333;
     color: #fff;
     padding: 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.sidebar:hover {
+    background-color: #444;
 }
 
 .sidebar h2 {
     text-align: center;
+    margin-bottom: 20px;
+    color: #ff6347;
 }
 
 .sidebar ul {
@@ -27,12 +34,18 @@ body {
 }
 
 .sidebar ul li a {
-    color: #fff;
+    color: #ff6347;
     text-decoration: none;
+    font-weight: bold;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .sidebar ul li a:hover {
-    text-decoration: underline;
+    color: #fff;
+    background-color: #ff6347;
 }
 
 .content {
@@ -59,6 +72,7 @@ button {
     color: #fff;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
