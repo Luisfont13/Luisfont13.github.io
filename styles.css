@@ -54,6 +54,19 @@ body {
     padding-left: 20px;
 }
 
+.submenu li {
+    margin: 5px 0;
+}
+
+.submenu li a {
+    color: #ff4500;
+}
+
+.submenu li a:hover {
+    color: #fff;
+    background-color: #ff4500;
+}
+
 .content {
     flex: 1;
     padding: 20px;
