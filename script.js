@@ -11,8 +11,3 @@ function cambiarColor() {
     const colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
     document.body.style.backgroundColor = colorAleatorio;
 }
-
-function toggleSubMenu(submenuId) {
-    const submenu = document.getElementById(submenuId);
-    submenu.style.display = submenu.style.display === 'none' || submenu.style.display === '' ? 'block' : 'none';
-}
