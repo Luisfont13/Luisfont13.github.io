@@ -48,6 +48,12 @@ body {
     background-color: #ff6347;
 }
 
+.submenu {
+    display: none;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
 .content {
     flex: 1;
     padding: 20px;

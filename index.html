@@ -8,17 +8,23 @@
     <div class="sidebar">
         <h2>Menú</h2>
         <ul>
-            <li><a href="#opcion1">Opción 1</a></li>
+            <li>
+                <a href="#opcion1" onclick="toggleSubMenu(event, 'submenu1')">Opción 1</a>
+                <ul id="submenu1" class="submenu">
+                    <li><a href="archivo1.txt" download="archivo1.txt">Descargar archivo 1</a></li>
+                    <li><a href="archivo2.txt" download="archivo2.txt">Descargar archivo 2</a></li>
+                </ul>
+            </li>
             <li><a href="#opcion2">Opción 2</a></li>
             <li><a href="#opcion3">Opción 3</a></li>
             <li><a href="#opcion4">Opción 4</a></li>
-            <li><a herf="#opcion5">opcion 5</a></li>
         </ul>
     </div>
     <div class="content">
         <h1>Bienvenido a mi página web</h1>
         <p>Este es un ejemplo de sitio web mejorado usando GitHub Pages.</p>
         <button onclick="mostrarAlerta()">Haz clic aquí</button>
+        <button onclick="cambiarColor()">Cambiar color de fondo</button>
     </div>
     
     <script src="script.js"></script>
